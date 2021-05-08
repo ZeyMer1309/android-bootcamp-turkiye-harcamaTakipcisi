@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gecisler"
+    app:startDestination="@id/frg_splashScreen">
+
+    <fragment
+        android:id="@+id/frg_splashScreen"
+        android:name="com.omerGurbuz.abt21harcamaTakip.ekranlar.splash.frg_splashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_frg_splashScreen_to_frg_onBoarding1"
+            app:destination="@id/frg_onBoarding1" />
+        <action
+            android:id="@+id/action_frg_splashScreen_to_frg_anaEkran"
+            app:destination="@id/frg_anaEkran" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_onBoarding1"
+        android:name="com.omerGurbuz.abt21harcamaTakip.ekranlar.geciciEkranlar.frg_onBoarding1"
+        android:label="fragment_on_boarding1"
+        tools:layout="@layout/fragment_on_boarding1" >
+        <action
+            android:id="@+id/action_frg_onBoarding1_to_frg_onBoarding_2"
+            app:destination="@id/frg_onBoarding_2"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_onBoarding_2"
+        android:name="com.omerGurbuz.abt21harcamaTakip.ekranlar.geciciEkranlar.frg_onBoarding2"
+        android:label="fragment_on_boarding2"
+        tools:layout="@layout/fragment_on_boarding2" >
+        <action
+            android:id="@+id/action_frg_onBoarding_2_to_frg_onBoarding3"
+            app:destination="@id/frg_onBoarding3"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_onBoarding3"
+        android:name="com.omerGurbuz.abt21harcamaTakip.ekranlar.geciciEkranlar.frg_onBoarding3"
+        android:label="fragment_on_boarding3"
+        tools:layout="@layout/fragment_on_boarding3" >
+        <action
+            android:id="@+id/action_frg_onBoarding3_to_frg_profil"
+            app:destination="@id/frg_profil"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_profil"
+        android:name="com.omerGurbuz.abt21harcamaTakip.ekranlar.anaEkranlar.frg_profil"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_frg_profil_to_frg_anaEkran"
+            app:destination="@id/frg_anaEkran"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_anaEkran"
+        android:name="com.omerGurbuz.abt21harcamaTakip.ekranlar.anaEkranlar.frg_anaEkran"
+        android:label="fragment_frg_ana_ekran"
+        tools:layout="@layout/fragment_ana_ekran" >
+        <action
+            android:id="@+id/action_frg_anaEkran_to_frg_profil"
+            app:destination="@id/frg_profil"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" />
+        <action
+            android:id="@+id/action_frg_anaEkran_to_frg_harcamaEkle"
+            app:destination="@id/frg_harcamaEkle"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" />
+        <action
+            android:id="@+id/action_frg_anaEkran_to_frg_harcamaDetay"
+            app:destination="@id/frg_harcamaDetay"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_harcamaEkle"
+        android:name="com.omerGurbuz.abt21harcamaTakip.ekranlar.anaEkranlar.frg_harcamaEkle"
+        android:label="fragment_harcama_ekle"
+        tools:layout="@layout/fragment_harcama_ekle" >
+        <action
+            android:id="@+id/action_frg_harcamaEkle_to_frg_anaEkran"
+            app:destination="@id/frg_anaEkran"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_harcamaDetay"
+        android:name="com.omerGurbuz.abt21harcamaTakip.ekranlar.anaEkranlar.frg_harcamaDetay"
+        android:label="fragment_harcama_detay"
+        tools:layout="@layout/fragment_harcama_detay" >
+        <action
+            android:id="@+id/action_frg_harcamaDetay_to_frg_anaEkran"
+            app:destination="@id/frg_anaEkran"
+            app:enterAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/slide_in_right" />
+        <argument
+            android:name="harcamaID"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="anlikTutar"
+            app:argType="string"
+            android:defaultValue='"Belirtilmemiş"' />
+        <argument
+            android:name="aciklama"
+            app:argType="string"
+            android:defaultValue='"Belirtilmemiş"' />
+        <argument
+            android:name="harcamaTipi"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

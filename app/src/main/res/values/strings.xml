@@ -1,0 +1,50 @@
+<resources>
+    <!-- Uygulama Özelinde -->
+    <string name="app_name">ABT21 - Harcama Takipçisi</string>
+    <string name="baslik">Harcama Takip Uygulaması</string>
+    <string name="resim">Resim Dosyası</string>
+    <string name="baglantiYok">İnternete Bağlı Değilsiniz!</string>
+
+    <!-- onBoarding Ekranlar -->
+    <string name="ob_gec">Geç</string>
+    <string name="ob_bitir">Bitir</string>
+    <string name="ob_karsilama_1">Karşınızda Harcama Takip Uygulaması</string>
+    <string name="ob_aciklama_1">Artık karışıklığa son !</string>
+    <string name="ob_karsilama_2">Kolayca Kategorilendir</string>
+    <string name="ob_aciklama_2">Harcamalarınızı kategorileyerek daha kolay takip edin !</string>
+    <string name="ob_karsilama_3">Farklı Para Birimleriyle Takip Et</string>
+    <string name="ob_aciklama_3">Harcamalarınızı istediğiniz para birimindeki (TRY, EUR, USD, GBP, JPY) karşılığını anlık olarak görüntüleyin !</string>
+
+    <!-- Ana Ekran -->
+    <string name="ae_baglanti_yok">İnternete Bağlı Değilsiniz !</string>
+    <string name="ae_merhaba">Merhaba</string>
+    <string name="ae_lbl_harcama">Harcamanız</string>
+    <string name="ae_ekle">Ekle</string>
+    <string name="ae_try">TRY</string>
+    <string name="ae_usd">USD</string>
+    <string name="ae_eur">EUR</string>
+    <string name="ae_gbp">GBP</string>
+    <string name="ae_jpy">JPY</string>
+
+    <!-- Harcama Ekle - Sil -->
+    <string name="he_baslik">Harcama Ekle</string>
+    <string name="he_detay">Harcama Detayları</string>
+    <string name="he_aciklama">Açıklama</string>
+    <string name="he_tutar">Tutar</string>
+    <string name="he_tip1">Fatura</string>
+    <string name="he_tip2">Kira</string>
+    <string name="he_tip3">Eğitim</string>
+    <string name="he_tip4">Kültür-Sanat</string>
+    <string name="he_tip5">Diğer</string>
+
+    <string name="hs_sil">Sil</string>
+
+    <!-- Profil Detayları -->
+    <string name="pd_baslik">Kullanıcı Adını Değiştir</string>
+    <string name="pd_hint">İsminizi Giriniz</string>
+    <string name="pd_erkek">Erkek</string>
+    <string name="pd_kadin">Kadın</string>
+    <string name="pd_diger">Belirtmek İstemiyorum</string>
+    <string name="pd_kaydet">Kaydet</string>
+    <string name="geri_tusu">Geri Tuşu</string>
+</resources>

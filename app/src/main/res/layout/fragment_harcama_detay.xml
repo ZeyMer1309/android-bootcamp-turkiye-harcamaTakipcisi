@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ekranlar.anaEkranlar.frg_harcamaDetay">
+
+    <TextView
+        android:id="@+id/heBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/bosluk_16"
+        android:layout_marginTop="@dimen/bosluk_16"
+        android:text="@string/he_detay"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/he_cizgi"
+        android:layout_marginTop="@dimen/bosluk_16"
+        android:background="@color/gri"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/heBaslik"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/harcamaDetaySimgesi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/harcamaDetayAciklamasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/resim"/>
+
+    <TextView
+        android:id="@+id/harcamaDetayAciklamasi"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/bosluk_32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Örnek"
+        app:layout_constraintTop_toBottomOf="@id/harcamaDetaySimgesi"
+        app:layout_constraintBottom_toTopOf="@id/harcamaDetayTutari"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/harcamaDetayTutari"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/bosluk_32"
+        android:text="Örnek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/harcamaDetayAciklamasi"
+        app:layout_constraintBottom_toTopOf="@id/harcamaDetaySil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/harcamaDetayID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Örnek"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/harcamaDetayTutari"
+        app:layout_constraintStart_toStartOf="@+id/harcamaDetayTutari"
+        app:layout_constraintTop_toBottomOf="@+id/harcamaDetayTutari"
+        android:layout_marginTop="@dimen/bosluk_8"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/harcamaDetaySil"
+        android:text="@string/hs_sil"
+        app:cornerRadius="20dp"
+        app:backgroundTint="@color/ana_renk_1"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/harcamaDetayTutari"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
